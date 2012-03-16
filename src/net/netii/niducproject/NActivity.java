@@ -54,6 +54,8 @@ public class NActivity extends Activity implements OnClickListener{
         	row[i].addView(cashdeskId[i]);
         	
         	startShopping[i] = new ToggleButton(this);
+        	startShopping[i].setTextOn("stop");
+        	startShopping[i].setTextOff("start");
         	startShopping[i].setId(buttonsByRow*i + startB);
         	startShopping[i].setOnClickListener(this);
         	row[i].addView(startShopping[i]);        	
